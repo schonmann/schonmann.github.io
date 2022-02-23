@@ -1,0 +1,95 @@
+:root {
+    --spacing-1: 1px;
+    --spacing-2: 4px;
+    --spacing-3: 8px;
+    --spacing-4: 16px;
+    --spacing-5: 24px;
+    --spacing-6: 32px;
+    --border-radius: 4px;
+    --font-size-1: 8px;
+    --font-size-2: 12px;
+    --font-size-3: 14px;
+    --background: linear-gradient(to bottom, #669999 -14%, #ccffff 84%);
+    --font-family: 'Ubuntu', sans-serif;
+    --font-weight: bold;
+    --text-color: #312f2f;
+    --line-height: 1.5;
+}  
+
+.heading-text {
+    word-break: keep-all;
+    white-space: nowrap;
+
+    word-wrap: unset;
+    font-weight: var(--font-weight);
+}
+
+.header {
+    background: var(--background);
+    height: 240px;
+    width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    min-width: 500px;
+    margin: -70px auto 140px auto;
+    display: flex;
+    flex-direction: column;
+}
+.inner-container {
+    padding: 0 var(--spacing-4);
+}
+.introduction {
+    display: flex;
+    flex-direction: row;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    word-break: break-word;
+    text-align: justify;
+}
+
+.avatar-container {
+    margin-right: var(--spacing-4);
+    border-radius: var(--border-radius);
+}
+
+.avatar {
+    object-fit:cover;
+    border-radius: var(--border-radius);
+}
+
+body {
+    min-width: fit-content;
+    width: 100%;    
+    padding: 0;
+    margin: 0px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+p {
+    margin: 0;
+}
+ul.reset,
+ul.reset li,
+ul.reset ul li {
+   margin: 0;
+   list-style-type: square;
+   line-height: var(--line-height);
+}
+
+.text {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height);
+}
+
+.text-margin-top {
+    margin-top: var(--spacing-4); 
+}
