@@ -74,6 +74,12 @@ body {
     color: var(--text-color);
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 1px dotted var(--text-color);
+}
+
 p {
     margin: 0;
 }
