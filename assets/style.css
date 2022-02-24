@@ -5,23 +5,28 @@
     --spacing-4: 16px;
     --spacing-5: 24px;
     --spacing-6: 32px;
-    --border-radius: 4px;
+    --avatar-width: 200px;
     --font-size-1: 8px;
     --font-size-2: 12px;
     --font-size-3: 14px;
+    --font-size-4: 20px;
+    --font-size-5: 24px;
+    --font-size-6: 30px;
     --background: linear-gradient(to bottom, #669999 -14%, #ccffff 84%);
     --font-family: 'Ubuntu', sans-serif;
     --font-weight: bold;
     --text-color: #312f2f;
     --line-height: 1.5;
+    --max-device-width: 600px;
 }  
 
 .heading-text {
+    font-size: var(--font-size-6);
     word-break: keep-all;
     white-space: nowrap;
-
     word-wrap: unset;
-    font-weight: var(--font-weight);
+    
+    
 }
 
 .header {
@@ -33,7 +38,7 @@
 .container {
     max-width: 800px;
     min-width: 500px;
-    margin: -70px auto 140px auto;
+    margin: -67px auto 140px auto;
     display: flex;
     flex-direction: column;
 }
@@ -45,7 +50,7 @@
     flex-direction: row;
 }
 
-.social {
+.contact-container {
     display: flex;
     flex-direction: column;
 }
@@ -56,13 +61,14 @@
 }
 
 .avatar-container {
-    margin-right: var(--spacing-4);
-    border-radius: var(--border-radius);
+    margin-right: var(--spacing-6);
+    border-radius: calc(var(--avatar-width) / 2);
 }
 
 .avatar {
+    width: var(--avatar-width);
     object-fit:cover;
-    border-radius: var(--border-radius);
+    border-radius: calc(var(--avatar-width) / 2);
 }
 
 body {
@@ -98,4 +104,19 @@ ul.reset ul li {
 
 .text-margin-top {
     margin-top: var(--spacing-4); 
+}
+
+@media only screen and (max-device-width: 600px) {
+    .heading-text {
+        margin-top: calc(-1 * var(--spacing-6));
+        text-align: right;
+        word-break: keep-all;
+        white-space: nowrap;
+        word-wrap: unset;
+        font-weight: var(--font-weight);
+    }
+    .introduction {
+        display: flex;
+        flex-direction: column;
+    }            
 }
