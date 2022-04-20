@@ -12,7 +12,7 @@
     --font-size-4: 20px;
     --font-size-5: 24px;
     --font-size-6: 30px;
-    --background: linear-gradient(to bottom, #669999 -14%, #ccffff 84%);
+    --background: #98B4D4;
     --font-family: 'Ubuntu', sans-serif;
     --font-weight: bold;
     --text-color: #312f2f;
@@ -69,6 +69,7 @@
     width: var(--avatar-width);
     object-fit:cover;
     border-radius: calc(var(--avatar-width) / 2);
+    border: var(--spacing-2) solid white;
 }
 
 body {
