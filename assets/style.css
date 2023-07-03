@@ -5,29 +5,32 @@
     --spacing-4: 16px;
     --spacing-5: 24px;
     --spacing-6: 32px;
-    --avatar-width: 200px;
+    --avatar-width: 180px;
     --font-size-1: 8px;
     --font-size-2: 12px;
     --font-size-3: 14px;
     --font-size-4: 20px;
     --font-size-5: 24px;
     --font-size-6: 30px;
-    --background-header: #98B4D4;
-    --background-body: #FAFAFA;
     --font-family: 'Ubuntu', sans-serif;
     --font-weight: bold;
-    --text-color: #312f2f;
+    --color-primary: #58668b;
+    --color-white: #ffffff;
+    --color-text: #312f2f;
+    --color-link: var(--color-primary);
+    --color-text-inverse: var(--color-white);
     --line-height: 1.5;
+    --background-header: var(--color-primary);
+    --background-body: var(--color-white);
     --max-device-width: 600px;
 }  
 
 .heading-text {
+    color: var(--color-text-inverse);
     font-size: var(--font-size-6);
     word-break: keep-all;
     white-space: nowrap;
     word-wrap: unset;
-    
-    
 }
 
 .header {
@@ -63,13 +66,13 @@
 
 .avatar-container {
     margin-right: var(--spacing-6);
-    border-radius: calc(var(--avatar-width) / 2);
+    border-radius: var(--avatar-width);
 }
 
 .avatar {
     width: var(--avatar-width);
     object-fit:cover;
-    border-radius: calc(var(--avatar-width) / 2);
+    border-radius: var(--avatar-width);
     border: var(--spacing-2) solid white;
 }
 
@@ -85,8 +88,8 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--text-color);
-    border-bottom: 1px dotted var(--text-color);
+    border-bottom: 1px dotted;
+    color: var(--color-link);
 }
 
 p {
@@ -117,6 +120,7 @@ ul.reset ul li {
         white-space: nowrap;
         word-wrap: unset;
         font-weight: var(--font-weight);
+        color: var(--color-primary);
     }
     .introduction {
         display: flex;
